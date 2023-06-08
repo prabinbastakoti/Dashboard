@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: white;
 }
 
 .container {
@@ -26,6 +25,7 @@
     gap: 2%;
     align-items: center;
     padding-left: 15px;
+    color: white;
 }
 
 .settingsContainer {
@@ -71,28 +71,84 @@
 
 /* =============================================RIGHT HALF==================================================== */
 
+.rightHalf {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
 .firstSection {
-    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
-.secondSection{
-    background-color: green;
-}
+
 .profileSection {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding:0% 4%;
 }
 
-.profileSection .searchbar {
+img.search {
+    width: 15px;
+    height: 15px;
+}
+
+img.notification {
+    width: 20px;
+    height: 20px;
+}
+
+img.display-picture {
+    width: 45px;
+    height: 45px;
+}
+
+.searchbar {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
 }
 
-.profileSection .notification{
-    justify-self: end;
-    margin-right: 10px;
+.search {
+    justify-self: center;
 }
+
+input[type="search"] {
+    width: 90%;
+    height: 28px;
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 0% 2%;
+    font-size: 0.9rem;
+}
+
+
+.profilePic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    font-weight: bold;
+}
+
+.display-picture {
+    justify-self: center;
+}
+
+.notification {
+    justify-self: right;
+}
+
+
 
 .greetingsSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    color: black;
+}
+
+
+.secondSection{
+    background-color: green;
 }
