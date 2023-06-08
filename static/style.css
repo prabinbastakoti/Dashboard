@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    word-spacing: 1px;
 }
 
 .container {
@@ -79,13 +80,13 @@
 .firstSection {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 0% 4%;
 }
 
 .profileSection {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    padding:0% 4%;
 }
 
 img.search {
@@ -132,21 +133,62 @@ input[type="search"] {
     font-weight: bold;
 }
 
-.display-picture {
-    justify-self: center;
-}
-
 .notification {
     justify-self: right;
 }
 
-
+.display-picture {
+    justify-self: center;
+}
 
 .greetingsSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: black;
+    margin-bottom: 15px;
 }
+
+.greetings {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.greetings .display-picture {
+    justify-self: start;
+    width: 60px;
+    height: 60px;
+}
+
+.greetingsText {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+
+.buttons {
+    display: grid;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .secondSection{
