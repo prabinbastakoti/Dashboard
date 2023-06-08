@@ -116,7 +116,7 @@ img.display-picture {
 
 input[type="search"] {
     width: 90%;
-    height: 28px;
+    height: 30px;
     background-color: #E2E8F0;
     border: none;
     border-radius: 20px;
@@ -163,6 +163,7 @@ input[type="search"] {
 .greetingsText {
     font-size: 0.7rem;
     font-weight: bold;
+    letter-spacing: 0.2px;
 }
 
 
@@ -170,7 +171,7 @@ input[type="search"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 22px;
-    padding: 10px 100px;
+    padding: 12px 100px;
 }
 
 button {
@@ -188,7 +189,69 @@ button {
 
 button:hover {
     transform: translateY(-6px);
+    filter: brightness(1.1);
 }
  
 /* ==============================================SECOND SECTION============================================================= */
+
+.secondSection{
+    background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding: 20px;
+    gap: 20px;
+}
+
+.projectsColumn .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    gap: 20px;
+}
+
+.card-container .heading {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.card-container .description {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border-left: 10px solid #F0B429;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card .controls img {
+    width: 20px;
+    height: 20px;
+    margin: 14px 4px 0px 4px;
+    transition: ease-in-out .3s;
+}
+
+.card .controls img:hover {
+    transform: scale(1.15);
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40px);
+    padding-left: 180px;
+}
+
+
+.right-sidebar {
+    font-weight: bold;
+    font-size: 1.1 rem;
+}
 
