@@ -74,7 +74,7 @@
 
 .rightHalf {
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .firstSection {
@@ -168,29 +168,27 @@ input[type="search"] {
 
 .buttons {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 10px 100px;
+}
+
+button {
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    transition: ease-in-out .4s;
+    cursor: pointer;
 }
 
 
-
+button:hover {
+    transform: translateY(-6px);
+}
  
+/* ==============================================SECOND SECTION============================================================= */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.secondSection{
-    background-color: green;
-}
